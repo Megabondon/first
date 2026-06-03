@@ -22,9 +22,13 @@
     </style>
 </head>
 <body>
+    <h1>Привет, CI/CD</h1>
     <div class="container">
-        <h1>Мой первый CI/CD проект</h1>
-        <p>Страница работает через автоматический деплой.</p>
+        <p>Эта страница была автоматически развёрнута с помощью CI/CD.</p>
+        <p>Время последнего обновления: <span id="timestamp"></span></p>
     </div>
+    <script>
+        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+    </script>
 </body>
 </html>
